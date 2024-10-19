@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project bare_metal_ledblinkONbtn ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'bare_metal_ledblinkONbtn.out' is up to date.
+
+**** Build Finished ****

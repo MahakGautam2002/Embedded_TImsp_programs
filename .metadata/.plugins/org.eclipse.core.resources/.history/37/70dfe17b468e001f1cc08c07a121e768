@@ -1,0 +1,24 @@
+//bare metal
+#include "ti_msp_dl_config.h"
+
+int main(void)
+{
+    SYSCFG_DL_init();
+
+    while (1)
+    {
+
+        if (GPIOA->DIN31_0 & 0x00040000)
+        {
+            GPIOB->DOUTTGL31_0 = 0x00400000;
+            delay_cycles(32000000);
+        }
+
+//        if (DL_GPIO_readPins(GPIO_GRP_0_k1_18_PORT, GPIO_GRP_0_k1_18_PIN))
+//                {
+//                    DL_GPIO_togglePins(GPIO_GRP_0_led22_PORT,
+//                                       GPIO_GRP_0_led22_PIN | GPIO_GRP_0_led26_PIN); // pink led toggle
+//                }
+
+    }
+}

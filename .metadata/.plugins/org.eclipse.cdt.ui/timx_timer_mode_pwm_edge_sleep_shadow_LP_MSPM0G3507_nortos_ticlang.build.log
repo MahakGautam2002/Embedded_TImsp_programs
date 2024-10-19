@@ -1,0 +1,49 @@
+
+**** Build of configuration Debug for project timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../timx_timer_mode_pwm_edge_sleep_shadow.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.19.0/sysconfig_cli.bat" --script "D:/ti/Mahak/KPIT_Marathon_Practice/Marathon-main/timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang/timx_timer_mode_pwm_edge_sleep_shadow.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_01_00_03/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+info: /ti/project_config/ProjectConfig deviceSpin: Note: User must select a device after migration. User must make sure to select the same device as the CCS Launch Device setting for proper configuration.
+info: PWM_0(/ti/driverlib/PWM): Peripheral does not retain register contents in STOP or STANDBY modes. User should take care to save and restore register configuration in application. See Retention Configuration section for more details.
+Generating Code (timx_timer_mode_pwm_edge_sleep_shadow.syscfg)...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\Marathon-main\timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang\Debug\device_linker.cmd...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\Marathon-main\timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang\Debug\device.opt...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\Marathon-main\timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang\Debug\device.cmd.genlibs...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\Marathon-main\timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang\Debug\ti_msp_dl_config.c...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\Marathon-main\timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang\Debug\ti_msp_dl_config.h...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\Marathon-main\timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang\Debug\Event.dot...
+Finished building: "../timx_timer_mode_pwm_edge_sleep_shadow.syscfg"
+ 
+Building file: "../timx_timer_mode_pwm_edge_sleep_shadow.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/Marathon-main/timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang" -I"D:/ti/Mahak/KPIT_Marathon_Practice/Marathon-main/timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_01_00_03/source" -gdwarf-3 -MMD -MP -MF"timx_timer_mode_pwm_edge_sleep_shadow.d_raw" -MT"timx_timer_mode_pwm_edge_sleep_shadow.o"  @"./device.opt"  -o"timx_timer_mode_pwm_edge_sleep_shadow.o" "../timx_timer_mode_pwm_edge_sleep_shadow.c"
+../timx_timer_mode_pwm_edge_sleep_shadow.c:13:13: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            printf("Duty cycle changed\n");
+            ^
+../timx_timer_mode_pwm_edge_sleep_shadow.c:13:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning generated.
+Finished building: "../timx_timer_mode_pwm_edge_sleep_shadow.c"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/Marathon-main/timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang" -I"D:/ti/Mahak/KPIT_Marathon_Practice/Marathon-main/timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_01_00_03/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building file: "C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/Marathon-main/timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang" -I"D:/ti/Mahak/KPIT_Marathon_Practice/Marathon-main/timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_01_00_03/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building target: "timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang.map" -Wl,-i"C:/ti/mspm0_sdk_2_01_00_03/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/Marathon-main/timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/Marathon-main/timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang_linkInfo.xml" -Wl,--rom_model -o "timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang.out" "./timx_timer_mode_pwm_edge_sleep_shadow.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
+Finished building target: "timx_timer_mode_pwm_edge_sleep_shadow_LP_MSPM0G3507_nortos_ticlang.out"
+ 
+
+**** Build Finished ****

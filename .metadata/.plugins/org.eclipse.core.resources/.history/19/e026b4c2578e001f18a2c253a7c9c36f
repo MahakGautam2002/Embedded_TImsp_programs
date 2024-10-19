@@ -1,0 +1,18 @@
+//dac enable
+//vref+, vref-
+//enable dac output
+//advance- output amplify on
+//others - sysctl= enable clock tree
+//       - mpfclk = enable
+//vref - internal voltage 2.5
+//press on clock tree- mpfclk- enable
+
+#include "ti_msp_dl_config.h"
+
+int main(void)
+{
+    SYSCFG_DL_init();
+
+    while (1) {
+    }
+}

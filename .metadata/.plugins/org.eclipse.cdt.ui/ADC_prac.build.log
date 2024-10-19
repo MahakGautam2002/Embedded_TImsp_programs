@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project ADC_prac ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ADC_prac.out' is up to date.
+
+**** Build Finished ****

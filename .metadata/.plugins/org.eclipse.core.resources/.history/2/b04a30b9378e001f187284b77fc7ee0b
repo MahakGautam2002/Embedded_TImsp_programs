@@ -1,0 +1,13 @@
+
+
+#include "ti_msp_dl_config.h"
+
+int main(void)
+{
+    SYSCFG_DL_init();
+
+    while (1) {
+        DL_GPIO_togglePins(GPIO_GRP_0_led22_PORT,GPIO_GRP_0_led22_PIN);
+        delay_cycles(32000000);
+    }
+}
