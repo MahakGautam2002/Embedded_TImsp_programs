@@ -7347,3 +7347,133 @@ Finished building target: "SPI_controller.out"
  
 
 **** Build Finished ****
+
+**** Clean-only build of configuration Debug for project I2C_controller ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "device.cmd.genlibs" "ti_msp_dl_config.h"  "device_linker.cmd" "device.opt" "ti_msp_dl_config.c"  "I2C_controller.out" 
+DEL /F "empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" 
+DEL /F "empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project I2C_controller ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "D:/ti/Mahak/KPIT_Marathon_Practice/I2C_controller/empty.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_02_00_05/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+Generating Code (empty.syscfg)...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\I2C_controller\Debug\device_linker.cmd...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\I2C_controller\Debug\device.opt...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\I2C_controller\Debug\device.cmd.genlibs...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\I2C_controller\Debug\ti_msp_dl_config.c...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\I2C_controller\Debug\ti_msp_dl_config.h...
+Finished building: "../empty.syscfg"
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/I2C_controller" -I"D:/ti/Mahak/KPIT_Marathon_Practice/I2C_controller/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+../empty.c:95:13: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            printf("%c \n", gRxPacket[i]);
+            ^
+../empty.c:95:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning generated.
+Finished building: "../empty.c"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/I2C_controller" -I"D:/ti/Mahak/KPIT_Marathon_Practice/I2C_controller/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building file: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/I2C_controller" -I"D:/ti/Mahak/KPIT_Marathon_Practice/I2C_controller/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building target: "I2C_controller.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"I2C_controller.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/I2C_controller" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/I2C_controller/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="I2C_controller_linkInfo.xml" -Wl,--rom_model -o "I2C_controller.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
+Finished building target: "I2C_controller.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PWM_timer ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'PWM_timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_Peripheral ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_Peripheral.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_controller ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_controller.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_array ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_array.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_assignment ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_assignment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_send_rec ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_send_rec.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'empty_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project I2C_controller ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'I2C_controller.out' is up to date.
+
+**** Build Finished ****

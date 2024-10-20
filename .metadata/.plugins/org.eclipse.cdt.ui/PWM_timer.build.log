@@ -3,21 +3,6 @@
 
 "C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
  
-Building file: "../empty.c"
-Invoking: Arm Compiler
-"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/PWM_timer" -I"D:/ti/Mahak/KPIT_Marathon_Practice/PWM_timer/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
-../empty.c:27:17: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
-                printf("i 1: %d \n", i);
-                ^
-../empty.c:27:17: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
-1 warning generated.
-Finished building: "../empty.c"
- 
-Building target: "PWM_timer.out"
-Invoking: Arm Linker
-"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"PWM_timer.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/PWM_timer" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/PWM_timer/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="PWM_timer_linkInfo.xml" -Wl,--rom_model -o "PWM_timer.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
-warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
-Finished building target: "PWM_timer.out"
- 
+gmake[1]: 'PWM_timer.out' is up to date.
 
 **** Build Finished ****

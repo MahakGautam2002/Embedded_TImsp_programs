@@ -1,0 +1,6 @@
+"./i2c_controller_rw_multibyte_fifo_poll.o"
+"./ti_msp_dl_config.o"
+"./startup_mspm0g350x_ticlang.o"
+-l"./device_linker.cmd"
+-ldevice.cmd.genlibs
+-llibc.a
