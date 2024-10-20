@@ -11,6 +11,9 @@ volatile uint8_t currentState2 = 0;
 uint8_t previousState2 = 0;
 uint8_t stableStable2 = 0;
 
+volatile uint8_t count=0;
+uint8_t capture=0;
+
 int main(void)
 {
     SYSCFG_DL_init();
@@ -24,8 +27,9 @@ int main(void)
 //        key1
         if (currentState1 == 1 && previousState1 == 1 && stableStable1 == 0)
         {
-            DL_GPIO_togglePins(GPIO_GRP_0_led22_PORT,
-            GPIO_GRP_0_led22_PIN | GPIO_GRP_0_led26_PIN); // pink led toggle
+//            DL_GPIO_togglePins(GPIO_GRP_0_led22_PORT,
+//            GPIO_GRP_0_led22_PIN | GPIO_GRP_0_led26_PIN); // pink led toggle
+            capture=count;
             stableStable1 = 1;
         }
         else if (currentState1 == 0 && previousState1 == 0
@@ -51,6 +55,7 @@ int main(void)
 
 void TIMER_0_INST_IRQHandler(void)
 {
+    count++;
 //        port A- k1- pin18
 if (DL_GPIO_readPins(GPIO_GRP_0_k1_18_PORT, GPIO_GRP_0_k1_18_PIN))
 {

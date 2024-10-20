@@ -7477,3 +7477,1895 @@ gmake[1]: 'empty_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
 gmake[1]: 'I2C_controller.out' is up to date.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project PWM_timer ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'PWM_timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_Peripheral ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_Peripheral.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_controller ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_controller.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_array ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_array.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_assignment ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_assignment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_send_rec ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_send_rec.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project debouncing ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "device.cmd.genlibs" "ti_msp_dl_config.h" "Event.dot"  "device_linker.cmd" "device.opt" "ti_msp_dl_config.c"  "debouncing.out" 
+DEL /F "empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" 
+DEL /F "empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "D:/ti/Mahak/KPIT_Marathon_Practice/debouncing/empty.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_02_00_05/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+info: TIMER_0(/ti/driverlib/TIMER): Peripheral does not retain register contents in STOP or STANDBY modes. User should take care to save and restore register configuration in application. See Retention Configuration section for more details.
+Generating Code (empty.syscfg)...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing\Debug\device_linker.cmd...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing\Debug\device.opt...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing\Debug\device.cmd.genlibs...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing\Debug\ti_msp_dl_config.c...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing\Debug\ti_msp_dl_config.h...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing\Debug\Event.dot...
+Finished building: "../empty.syscfg"
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+Finished building: "../empty.c"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building file: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building target: "debouncing.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"debouncing.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="debouncing_linkInfo.xml" -Wl,--rom_model -o "debouncing.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+Finished building target: "debouncing.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project debouncing_Ass01 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "device.cmd.genlibs" "ti_msp_dl_config.h" "Event.dot"  "device_linker.cmd" "device.opt" "ti_msp_dl_config.c"  "debouncing_Ass01.out" 
+DEL /F "empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" 
+DEL /F "empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing_Ass01 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/empty.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_02_00_05/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+info: TIMER_0(/ti/driverlib/TIMER): Peripheral does not retain register contents in STOP or STANDBY modes. User should take care to save and restore register configuration in application. See Retention Configuration section for more details.
+Generating Code (empty.syscfg)...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\device_linker.cmd...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\device.opt...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\device.cmd.genlibs...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\ti_msp_dl_config.c...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\ti_msp_dl_config.h...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\Event.dot...
+Finished building: "../empty.syscfg"
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+Finished building: "../empty.c"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building file: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building target: "debouncing_Ass01.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"debouncing_Ass01.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="debouncing_Ass01_linkInfo.xml" -Wl,--rom_model -o "debouncing_Ass01.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+Finished building target: "debouncing_Ass01.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'empty_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "device.cmd.genlibs" "ti_msp_dl_config.h" "Event.dot"  "device_linker.cmd" "device.opt" "ti_msp_dl_config.c"  "i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out" 
+DEL /F "i2c_controller_rw_multibyte_fifo_poll.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" 
+DEL /F "i2c_controller_rw_multibyte_fifo_poll.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../i2c_controller_rw_multibyte_fifo_poll.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/Mahak/workspace_prac/i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang/i2c_controller_rw_multibyte_fifo_poll.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_02_00_05/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+Generating Code (i2c_controller_rw_multibyte_fifo_poll.syscfg)...
+Writing C:\Users\Mahak\workspace_prac\i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang\Debug\device_linker.cmd...
+Writing C:\Users\Mahak\workspace_prac\i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang\Debug\device.opt...
+Writing C:\Users\Mahak\workspace_prac\i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang\Debug\device.cmd.genlibs...
+Writing C:\Users\Mahak\workspace_prac\i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang\Debug\ti_msp_dl_config.c...
+Writing C:\Users\Mahak\workspace_prac\i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang\Debug\ti_msp_dl_config.h...
+Writing C:\Users\Mahak\workspace_prac\i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang\Debug\Event.dot...
+Finished building: "../i2c_controller_rw_multibyte_fifo_poll.syscfg"
+ 
+Building file: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/Mahak/workspace_prac/i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/Mahak/workspace_prac/i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building file: "../i2c_controller_rw_multibyte_fifo_poll.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/Mahak/workspace_prac/i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/Mahak/workspace_prac/i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"i2c_controller_rw_multibyte_fifo_poll.d_raw" -MT"i2c_controller_rw_multibyte_fifo_poll.o"  @"./device.opt"  -o"i2c_controller_rw_multibyte_fifo_poll.o" "../i2c_controller_rw_multibyte_fifo_poll.c"
+../i2c_controller_rw_multibyte_fifo_poll.c:98:13: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            printf("%c \n", gRxPacket[i]);
+            ^
+../i2c_controller_rw_multibyte_fifo_poll.c:98:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning generated.
+Finished building: "../i2c_controller_rw_multibyte_fifo_poll.c"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/Mahak/workspace_prac/i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/Mahak/workspace_prac/i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building target: "i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"C:/Users/Mahak/workspace_prac/i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang" -Wl,-i"C:/Users/Mahak/workspace_prac/i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang_linkInfo.xml" -Wl,--rom_model -o "i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out" "./i2c_controller_rw_multibyte_fifo_poll.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
+Finished building target: "i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "device.cmd.genlibs" "ti_msp_dl_config.h" "Event.dot"  "device_linker.cmd" "device.opt" "ti_msp_dl_config.c"  "i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out" 
+DEL /F "i2c_target_rw_multibyte_fifo_poll.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" 
+DEL /F "i2c_target_rw_multibyte_fifo_poll.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../i2c_target_rw_multibyte_fifo_poll.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/Mahak/workspace_prac/i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang/i2c_target_rw_multibyte_fifo_poll.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_02_00_05/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+Generating Code (i2c_target_rw_multibyte_fifo_poll.syscfg)...
+Writing C:\Users\Mahak\workspace_prac\i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang\Debug\device_linker.cmd...
+Writing C:\Users\Mahak\workspace_prac\i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang\Debug\device.opt...
+Writing C:\Users\Mahak\workspace_prac\i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang\Debug\device.cmd.genlibs...
+Writing C:\Users\Mahak\workspace_prac\i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang\Debug\ti_msp_dl_config.c...
+Writing C:\Users\Mahak\workspace_prac\i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang\Debug\ti_msp_dl_config.h...
+Writing C:\Users\Mahak\workspace_prac\i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang\Debug\Event.dot...
+Finished building: "../i2c_target_rw_multibyte_fifo_poll.syscfg"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/Mahak/workspace_prac/i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/Mahak/workspace_prac/i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building file: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/Mahak/workspace_prac/i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/Mahak/workspace_prac/i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building file: "../i2c_target_rw_multibyte_fifo_poll.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/Mahak/workspace_prac/i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/Mahak/workspace_prac/i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"i2c_target_rw_multibyte_fifo_poll.d_raw" -MT"i2c_target_rw_multibyte_fifo_poll.o"  @"./device.opt"  -o"i2c_target_rw_multibyte_fifo_poll.o" "../i2c_target_rw_multibyte_fifo_poll.c"
+../i2c_target_rw_multibyte_fifo_poll.c:54:13: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            printf("%u \n", gRxPacket[i]);
+            ^
+../i2c_target_rw_multibyte_fifo_poll.c:54:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning generated.
+Finished building: "../i2c_target_rw_multibyte_fifo_poll.c"
+ 
+Building target: "i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"C:/Users/Mahak/workspace_prac/i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang" -Wl,-i"C:/Users/Mahak/workspace_prac/i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang_linkInfo.xml" -Wl,--rom_model -o "i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out" "./i2c_target_rw_multibyte_fifo_poll.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
+Finished building target: "i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project mcan_message_rx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "device.cmd.genlibs" "ti_msp_dl_config.h" "Event.dot"  "device_linker.cmd" "device.opt" "ti_msp_dl_config.c"  "mcan_message_rx_LP_MSPM0G3507_nortos_ticlang.out" 
+DEL /F "mcan_message_rx.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" 
+DEL /F "mcan_message_rx.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_message_rx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../mcan_message_rx.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/Mahak/workspace_prac/mcan_message_rx_LP_MSPM0G3507_nortos_ticlang/mcan_message_rx.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_02_00_05/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+info: MCAN0(/ti/driverlib/MCAN) rxBufStartAddr: RX Buffer Start Address 208 End Address 224
+info: MCAN0(/ti/driverlib/MCAN) rxFIFO0startAddr: RX FIFO 0 Start Address 172 End Address 220
+info: MCAN0(/ti/driverlib/MCAN) rxFIFO1startAddr: RX FIFO 1 Start Address 192 End Address 224
+info: MCAN0(/ti/driverlib/MCAN) txStartAddr: TX Buffer Start Address 148 End Address 292
+info: MCAN0(/ti/driverlib/MCAN) txEventFIFOStartAddr: TX Event FIFO Start Address 164 End Address 168
+info: MCAN0(/ti/driverlib/MCAN) flssa: Standard ID Filter List Start Address 0 End Address 4
+info: MCAN0(/ti/driverlib/MCAN) flesa: Extended ID Filter List Start Address 0 End Address 0
+Generating Code (mcan_message_rx.syscfg)...
+Writing C:\Users\Mahak\workspace_prac\mcan_message_rx_LP_MSPM0G3507_nortos_ticlang\Debug\device_linker.cmd...
+Writing C:\Users\Mahak\workspace_prac\mcan_message_rx_LP_MSPM0G3507_nortos_ticlang\Debug\device.opt...
+Writing C:\Users\Mahak\workspace_prac\mcan_message_rx_LP_MSPM0G3507_nortos_ticlang\Debug\device.cmd.genlibs...
+Writing C:\Users\Mahak\workspace_prac\mcan_message_rx_LP_MSPM0G3507_nortos_ticlang\Debug\ti_msp_dl_config.c...
+Writing C:\Users\Mahak\workspace_prac\mcan_message_rx_LP_MSPM0G3507_nortos_ticlang\Debug\ti_msp_dl_config.h...
+Writing C:\Users\Mahak\workspace_prac\mcan_message_rx_LP_MSPM0G3507_nortos_ticlang\Debug\Event.dot...
+Finished building: "../mcan_message_rx.syscfg"
+ 
+Building file: "../mcan_message_rx.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/Mahak/workspace_prac/mcan_message_rx_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/Mahak/workspace_prac/mcan_message_rx_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"mcan_message_rx.d_raw" -MT"mcan_message_rx.o"  @"./device.opt"  -o"mcan_message_rx.o" "../mcan_message_rx.c"
+../mcan_message_rx.c:82:13: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            printf("03:%d",rxMsg->data[0]);
+            ^
+../mcan_message_rx.c:82:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning generated.
+Finished building: "../mcan_message_rx.c"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/Mahak/workspace_prac/mcan_message_rx_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/Mahak/workspace_prac/mcan_message_rx_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building file: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/Mahak/workspace_prac/mcan_message_rx_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/Mahak/workspace_prac/mcan_message_rx_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building target: "mcan_message_rx_LP_MSPM0G3507_nortos_ticlang.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"mcan_message_rx_LP_MSPM0G3507_nortos_ticlang.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"C:/Users/Mahak/workspace_prac/mcan_message_rx_LP_MSPM0G3507_nortos_ticlang" -Wl,-i"C:/Users/Mahak/workspace_prac/mcan_message_rx_LP_MSPM0G3507_nortos_ticlang/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="mcan_message_rx_LP_MSPM0G3507_nortos_ticlang_linkInfo.xml" -Wl,--rom_model -o "mcan_message_rx_LP_MSPM0G3507_nortos_ticlang.out" "./mcan_message_rx.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
+Finished building target: "mcan_message_rx_LP_MSPM0G3507_nortos_ticlang.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "device.cmd.genlibs" "ti_msp_dl_config.h" "Event.dot"  "device_linker.cmd" "device.opt" "ti_msp_dl_config.c"  "mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang.out" 
+DEL /F "mcan_single_message_tx.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" 
+DEL /F "mcan_single_message_tx.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../mcan_single_message_tx.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/Mahak/workspace_prac/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/mcan_single_message_tx.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_02_00_05/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+info: MCAN0(/ti/driverlib/MCAN) rxBufStartAddr: RX Buffer Start Address 0 End Address 72
+info: MCAN0(/ti/driverlib/MCAN) rxFIFO0startAddr: RX FIFO 0 Start Address 0 End Address 0
+info: MCAN0(/ti/driverlib/MCAN) rxFIFO1startAddr: RX FIFO 1 Start Address 0 End Address 0
+info: MCAN0(/ti/driverlib/MCAN) txStartAddr: TX Buffer Start Address 0 End Address 72
+info: MCAN0(/ti/driverlib/MCAN) txEventFIFOStartAddr: TX Event FIFO Start Address 0 End Address 4
+info: MCAN0(/ti/driverlib/MCAN) flssa: Standard ID Filter List Start Address 0 End Address 0
+info: MCAN0(/ti/driverlib/MCAN) flesa: Extended ID Filter List Start Address 0 End Address 0
+Generating Code (mcan_single_message_tx.syscfg)...
+Writing C:\Users\Mahak\workspace_prac\mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang\mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang\Debug\device_linker.cmd...
+Writing C:\Users\Mahak\workspace_prac\mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang\mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang\Debug\device.opt...
+Writing C:\Users\Mahak\workspace_prac\mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang\mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang\Debug\device.cmd.genlibs...
+Writing C:\Users\Mahak\workspace_prac\mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang\mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang\Debug\ti_msp_dl_config.c...
+Writing C:\Users\Mahak\workspace_prac\mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang\mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang\Debug\ti_msp_dl_config.h...
+Writing C:\Users\Mahak\workspace_prac\mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang\mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang\Debug\Event.dot...
+Finished building: "../mcan_single_message_tx.syscfg"
+ 
+Building file: "../mcan_single_message_tx.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/Mahak/workspace_prac/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/Mahak/workspace_prac/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"mcan_single_message_tx.d_raw" -MT"mcan_single_message_tx.o"  @"./device.opt"  -o"mcan_single_message_tx.o" "../mcan_single_message_tx.c"
+Finished building: "../mcan_single_message_tx.c"
+ 
+Building file: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/Mahak/workspace_prac/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/Mahak/workspace_prac/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/Mahak/workspace_prac/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/Mahak/workspace_prac/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building target: "mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"C:/Users/Mahak/workspace_prac/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang" -Wl,-i"C:/Users/Mahak/workspace_prac/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang_linkInfo.xml" -Wl,--rom_model -o "mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang.out" "./mcan_single_message_tx.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+Finished building target: "mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project police_light ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "device.cmd.genlibs" "ti_msp_dl_config.h"  "device_linker.cmd" "device.opt" "ti_msp_dl_config.c"  "police_light.out" 
+DEL /F "empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" 
+DEL /F "empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project police_light ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "D:/ti/Mahak/KPIT_Marathon_Practice/police_light/empty.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_02_00_05/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+Generating Code (empty.syscfg)...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\police_light\Debug\device_linker.cmd...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\police_light\Debug\device.opt...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\police_light\Debug\device.cmd.genlibs...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\police_light\Debug\ti_msp_dl_config.c...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\police_light\Debug\ti_msp_dl_config.h...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\police_light\Debug\Event.dot...
+Finished building: "../empty.syscfg"
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+Finished building: "../empty.c"
+ 
+Building file: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building target: "police_light.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"police_light.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="police_light_linkInfo.xml" -Wl,--rom_model -o "police_light.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+Finished building target: "police_light.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project police_light ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+Finished building: "../empty.c"
+ 
+Building target: "police_light.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"police_light.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="police_light_linkInfo.xml" -Wl,--rom_model -o "police_light.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+Finished building target: "police_light.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project police_light ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+Finished building: "../empty.c"
+ 
+Building target: "police_light.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"police_light.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="police_light_linkInfo.xml" -Wl,--rom_model -o "police_light.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+Finished building target: "police_light.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PWM_timer ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'PWM_timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_Peripheral ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_Peripheral.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_controller ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_controller.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_array ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_array.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_assignment ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_assignment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_send_rec ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_send_rec.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'debouncing.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing_Ass01 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'debouncing_Ass01.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'empty_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_message_rx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_message_rx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project police_light ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "D:/ti/Mahak/KPIT_Marathon_Practice/police_light/empty.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_02_00_05/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+info: TIMER_0(/ti/driverlib/TIMER): Peripheral does not retain register contents in STOP or STANDBY modes. User should take care to save and restore register configuration in application. See Retention Configuration section for more details.
+Generating Code (empty.syscfg)...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\police_light\Debug\device_linker.cmd...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\police_light\Debug\device.opt...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\police_light\Debug\device.cmd.genlibs...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\police_light\Debug\ti_msp_dl_config.c...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\police_light\Debug\ti_msp_dl_config.h...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\police_light\Debug\Event.dot...
+Finished building: "../empty.syscfg"
+ 
+Building file: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+Finished building: "../empty.c"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building target: "police_light.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"police_light.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="police_light_linkInfo.xml" -Wl,--rom_model -o "police_light.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+Finished building target: "police_light.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project police_light ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'police_light.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project 1 GPIO toggle ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "device.cmd.genlibs" "ti_msp_dl_config.h" "Event.dot"  "device_linker.cmd" "device.opt" "ti_msp_dl_config.c"  "1 GPIO toggle.out" 
+DEL /F "empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" 
+DEL /F "empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 1 GPIO toggle ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "D:/ti/Mahak/KPIT_Marathon_Practice/1 GPIO toggle (2)/1 GPIO toggle/empty.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_02_00_05/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+info: TIMER_10ms(/ti/driverlib/TIMER): Peripheral does not retain register contents in STOP or STANDBY modes. User should take care to save and restore register configuration in application. See Retention Configuration section for more details.
+Generating Code (empty.syscfg)...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\1 GPIO toggle (2)\1 GPIO toggle\Debug\device_linker.cmd...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\1 GPIO toggle (2)\1 GPIO toggle\Debug\device.opt...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\1 GPIO toggle (2)\1 GPIO toggle\Debug\device.cmd.genlibs...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\1 GPIO toggle (2)\1 GPIO toggle\Debug\ti_msp_dl_config.c...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\1 GPIO toggle (2)\1 GPIO toggle\Debug\ti_msp_dl_config.h...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\1 GPIO toggle (2)\1 GPIO toggle\Debug\Event.dot...
+Finished building: "../empty.syscfg"
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/1 GPIO toggle (2)/1 GPIO toggle" -I"D:/ti/Mahak/KPIT_Marathon_Practice/1 GPIO toggle (2)/1 GPIO toggle/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+Finished building: "../empty.c"
+ 
+Building file: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/1 GPIO toggle (2)/1 GPIO toggle" -I"D:/ti/Mahak/KPIT_Marathon_Practice/1 GPIO toggle (2)/1 GPIO toggle/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/1 GPIO toggle (2)/1 GPIO toggle" -I"D:/ti/Mahak/KPIT_Marathon_Practice/1 GPIO toggle (2)/1 GPIO toggle/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building target: "1 GPIO toggle.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"1 GPIO toggle.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/1 GPIO toggle (2)/1 GPIO toggle" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/1 GPIO toggle (2)/1 GPIO toggle/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="1 GPIO toggle_linkInfo.xml" -Wl,--rom_model -o "1 GPIO toggle.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
+Finished building target: "1 GPIO toggle.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 1 GPIO toggle ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: '1 GPIO toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 1 GPIO toggle ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: '1 GPIO toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PWM_timer ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'PWM_timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_Peripheral ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_Peripheral.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_controller ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_controller.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_array ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_array.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_assignment ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_assignment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_send_rec ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_send_rec.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'debouncing.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing_Ass01 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+../empty.c:15:24: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+volatile uint8_t count=500;
+                 ~~~~~ ^~~
+../empty.c:42:13: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            printf("%d \n",count);
+            ^
+../empty.c:42:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+../empty.c:28:17: warning: result of comparison of constant 1000 with expression of type 'volatile uint8_t' (aka 'volatile unsigned char') is always true [-Wtautological-constant-out-of-range-compare]
+        if(count<1000 && count>100){
+           ~~~~~^~~~~
+../empty.c:32:31: warning: result of comparison of constant 1000 with expression of type 'volatile uint8_t' (aka 'volatile unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+        if(count<=100 || count>=1000){
+                         ~~~~~^ ~~~~
+../empty.c:33:19: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+            count=500;
+                 ~^~~
+5 warnings generated.
+Finished building: "../empty.c"
+ 
+Building target: "debouncing_Ass01.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"debouncing_Ass01.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="debouncing_Ass01_linkInfo.xml" -Wl,--rom_model -o "debouncing_Ass01.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
+Finished building target: "debouncing_Ass01.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'empty_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_message_rx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_message_rx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project police_light ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -I"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+Finished building: "../empty.c"
+ 
+Building target: "police_light.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"police_light.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/police_light" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/police_light/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="police_light_linkInfo.xml" -Wl,--rom_model -o "police_light.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+Finished building target: "police_light.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing_Ass01 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'debouncing_Ass01.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 1 GPIO toggle ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: '1 GPIO toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PWM_timer ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'PWM_timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_Peripheral ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_Peripheral.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_controller ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_controller.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_array ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_array.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_assignment ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_assignment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_send_rec ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_send_rec.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'debouncing.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing_Ass01 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/empty.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_02_00_05/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+info: TIMER_0(/ti/driverlib/TIMER): Peripheral does not retain register contents in STOP or STANDBY modes. User should take care to save and restore register configuration in application. See Retention Configuration section for more details.
+Generating Code (empty.syscfg)...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\device_linker.cmd...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\device.opt...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\device.cmd.genlibs...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\ti_msp_dl_config.c...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\ti_msp_dl_config.h...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\Event.dot...
+Finished building: "../empty.syscfg"
+ 
+Building file: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+../empty.c:15:24: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+volatile uint8_t count=500;
+                 ~~~~~ ^~~
+../empty.c:42:13: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            printf("%d \n",count);
+            ^
+../empty.c:42:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+../empty.c:28:17: warning: result of comparison of constant 1000 with expression of type 'volatile uint8_t' (aka 'volatile unsigned char') is always true [-Wtautological-constant-out-of-range-compare]
+        if(count<1000 && count>100){
+           ~~~~~^~~~~
+../empty.c:32:31: warning: result of comparison of constant 1000 with expression of type 'volatile uint8_t' (aka 'volatile unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+        if(count<=100 || count>=1000){
+                         ~~~~~^ ~~~~
+../empty.c:33:19: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+            count=500;
+                 ~^~~
+5 warnings generated.
+Finished building: "../empty.c"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building target: "debouncing_Ass01.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"debouncing_Ass01.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="debouncing_Ass01_linkInfo.xml" -Wl,--rom_model -o "debouncing_Ass01.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
+Finished building target: "debouncing_Ass01.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'empty_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project inc_dec2 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "device.cmd.genlibs" "ti_msp_dl_config.h" "Event.dot"  "device_linker.cmd" "device.opt" "ti_msp_dl_config.c"  "inc_dec2.out" 
+DEL /F "empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" 
+DEL /F "empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project inc_dec2 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.19.0/sysconfig_cli.bat" --script "D:/ti/Mahak/workspace_v13/inc_dec2/empty.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_01_00_03/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+info: /ti/project_config/ProjectConfig deviceSpin: Note: User must select a device after migration. User must make sure to select the same device as the CCS Launch Device setting for proper configuration.
+info: TIMER_0(/ti/driverlib/TIMER): Peripheral does not retain register contents in STOP or STANDBY modes. User should take care to save and restore register configuration in application. See Retention Configuration section for more details.
+Generating Code (empty.syscfg)...
+Writing D:\ti\Mahak\workspace_v13\inc_dec2\Debug\device_linker.cmd...
+Writing D:\ti\Mahak\workspace_v13\inc_dec2\Debug\device.opt...
+Writing D:\ti\Mahak\workspace_v13\inc_dec2\Debug\device.cmd.genlibs...
+Writing D:\ti\Mahak\workspace_v13\inc_dec2\Debug\ti_msp_dl_config.c...
+Writing D:\ti\Mahak\workspace_v13\inc_dec2\Debug\ti_msp_dl_config.h...
+Writing D:\ti\Mahak\workspace_v13\inc_dec2\Debug\Event.dot...
+Finished building: "../empty.syscfg"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/workspace_v13/inc_dec2" -I"D:/ti/Mahak/workspace_v13/inc_dec2/Debug" -I"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_01_00_03/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+Building file: "C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/workspace_v13/inc_dec2" -I"D:/ti/Mahak/workspace_v13/inc_dec2/Debug" -I"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_01_00_03/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/workspace_v13/inc_dec2" -I"D:/ti/Mahak/workspace_v13/inc_dec2/Debug" -I"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_01_00_03/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+Finished building: "../empty.c"
+ 
+Building target: "inc_dec2.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"inc_dec2.map" -Wl,-i"C:/ti/mspm0_sdk_2_01_00_03/source" -Wl,-i"D:/ti/Mahak/workspace_v13/inc_dec2" -Wl,-i"D:/ti/Mahak/workspace_v13/inc_dec2/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="inc_dec2_linkInfo.xml" -Wl,--rom_model -o "inc_dec2.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
+Finished building target: "inc_dec2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_message_rx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_message_rx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project police_light ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'police_light.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 1 GPIO toggle ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: '1 GPIO toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PWM_timer ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'PWM_timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_Peripheral ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_Peripheral.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_controller ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_controller.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_array ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_array.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_assignment ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_assignment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_send_rec ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_send_rec.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'debouncing.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing_Ass01 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+subdir_rules.mk:9: recipe for target 'empty.o' failed
+../empty.c:15:24: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+volatile uint8_t count=500;
+                 ~~~~~ ^~~
+../empty.c:31:13: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            printf("count: %d \n",delay);
+            ^
+../empty.c:31:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+../empty.c:41:1: error: function definition is not allowed here
+{
+^
+../empty.c:46:28: error: function definition is not allowed here
+void GROUP_IRQHandler(void){
+                           ^
+../empty.c:59:28: error: function definition is not allowed here
+void GROUP_IRQHandler(void){
+                           ^
+../empty.c:70:2: error: expected '}'
+}
+ ^
+../empty.c:19:1: note: to match this '{'
+{
+^
+../empty.c:34:31: warning: result of comparison of constant 1000 with expression of type 'volatile uint8_t' (aka 'volatile unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+        if(count<=100 || count>=1000){
+                         ~~~~~^ ~~~~
+../empty.c:35:19: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+            count=500;
+                 ~^~~
+4 warnings and 4 errors generated.
+gmake: *** [empty.o] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'empty_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project inc_dec2 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'inc_dec2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_message_rx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_message_rx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project police_light ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'police_light.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 1 GPIO toggle ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: '1 GPIO toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PWM_timer ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'PWM_timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_Peripheral ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_Peripheral.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_controller ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_controller.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_array ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_array.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_assignment ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_assignment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_send_rec ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_send_rec.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'debouncing.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing_Ass01 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/empty.syscfg" -o "." -s "C:/ti/mspm0_sdk_2_02_00_05/.metadata/product.json" --compiler ticlang
+Running script...
+Validating...
+info: TIMER_0(/ti/driverlib/TIMER): Peripheral does not retain register contents in STOP or STANDBY modes. User should take care to save and restore register configuration in application. See Retention Configuration section for more details.
+Generating Code (empty.syscfg)...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\device_linker.cmd...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\device.opt...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\device.cmd.genlibs...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\ti_msp_dl_config.c...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\ti_msp_dl_config.h...
+Writing D:\ti\Mahak\KPIT_Marathon_Practice\debouncing_Ass01\Debug\Event.dot...
+Finished building: "../empty.syscfg"
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+subdir_rules.mk:9: recipe for target 'empty.o' failed
+../empty.c:16:24: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+volatile uint8_t delay=500;
+                 ~~~~~ ^~~
+../empty.c:23:20: error: use of undeclared identifier 'GPIO_GRP_0_INT_IRQN'
+    NVIC_EnableIRQ(GPIO_GRP_0_INT_IRQN);
+                   ^
+../empty.c:33:13: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            printf("count: %d \n",delay);
+            ^
+../empty.c:33:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+../empty.c:43:1: error: function definition is not allowed here
+{
+^
+../empty.c:48:28: error: function definition is not allowed here
+void GROUP_IRQHandler(void){
+                           ^
+../empty.c:61:28: error: function definition is not allowed here
+void GROUP_IRQHandler(void){
+                           ^
+../empty.c:72:2: error: expected '}'
+}
+ ^
+../empty.c:19:1: note: to match this '{'
+{
+^
+../empty.c:36:31: warning: result of comparison of constant 1000 with expression of type 'volatile uint8_t' (aka 'volatile unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+        if(count<=100 || count>=1000){
+                         ~~~~~^ ~~~~
+../empty.c:37:19: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+            count=500;
+                 ~^~~
+4 warnings and 5 errors generated.
+gmake: *** [empty.o] Error 1
+Building file: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"startup_mspm0g350x_ticlang.d_raw" -MT"startup_mspm0g350x_ticlang.o"  @"./device.opt"  -o"startup_mspm0g350x_ticlang.o" "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+Finished building: "C:/ti/mspm0_sdk_2_02_00_05/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c"
+ 
+Building file: "ti_msp_dl_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"ti_msp_dl_config.d_raw" -MT"ti_msp_dl_config.o"  @"./device.opt"  -o"ti_msp_dl_config.o" "ti_msp_dl_config.c"
+Finished building: "ti_msp_dl_config.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'empty_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project inc_dec2 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'inc_dec2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_message_rx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_message_rx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project police_light ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'police_light.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 1 GPIO toggle ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: '1 GPIO toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PWM_timer ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'PWM_timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_Peripheral ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_Peripheral.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_controller ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_controller.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_array ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_array.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_assignment ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_assignment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_send_rec ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_send_rec.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'debouncing.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing_Ass01 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+subdir_rules.mk:9: recipe for target 'empty.o' failed
+../empty.c:4:10: fatal error: 'ti_msp_GPIO_GRP_0_GPIOA_INT_IRQNdl_config.h' file not found
+#include "ti_msp_GPIO_GRP_0_GPIOA_INT_IRQNdl_config.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+gmake: *** [empty.o] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'empty_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project inc_dec2 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'inc_dec2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_message_rx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_message_rx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project police_light ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'police_light.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing_Ass01 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+subdir_rules.mk:9: recipe for target 'empty.o' failed
+../empty.c:16:24: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+volatile uint8_t delay=500;
+                 ~~~~~ ^~~
+../empty.c:33:13: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            printf("count: %d \n",delay);
+            ^
+../empty.c:33:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+../empty.c:43:1: error: function definition is not allowed here
+{
+^
+../empty.c:48:28: error: function definition is not allowed here
+void GROUP_IRQHandler(void){
+                           ^
+../empty.c:61:28: error: function definition is not allowed here
+void GROUP_IRQHandler(void){
+                           ^
+../empty.c:72:2: error: expected '}'
+}
+ ^
+../empty.c:19:1: note: to match this '{'
+{
+^
+../empty.c:36:31: warning: result of comparison of constant 1000 with expression of type 'volatile uint8_t' (aka 'volatile unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+        if(count<=100 || count>=1000){
+                         ~~~~~^ ~~~~
+../empty.c:37:19: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+            count=500;
+                 ~^~~
+4 warnings and 4 errors generated.
+gmake: *** [empty.o] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 1 GPIO toggle ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: '1 GPIO toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project PWM_timer ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'PWM_timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_Peripheral ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_Peripheral.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SPI_controller ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SPI_controller.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_array ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_array.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_assignment ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_assignment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UART_send_rec ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'UART_send_rec.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'debouncing.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing_Ass01 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+subdir_rules.mk:9: recipe for target 'empty.o' failed
+../empty.c:7:26: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+volatile uint8_t delay = 500;
+                 ~~~~~   ^~~
+../empty.c:25:13: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            printf("count: %d \n", delay);
+            ^
+../empty.c:25:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+../empty.c:36:5: error: function definition is not allowed here
+    {
+    ^
+../empty.c:42:5: error: function definition is not allowed here
+    {
+    ^
+../empty.c:68:1: error: expected '}'
+^
+../empty.c:10:1: note: to match this '{'
+{
+^
+../empty.c:28:35: warning: result of comparison of constant 1000 with expression of type 'volatile uint8_t' (aka 'volatile unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+        if (count <= 100 || count >= 1000)
+                            ~~~~~ ^  ~~~~
+../empty.c:30:21: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+            count = 500;
+                  ~ ^~~
+4 warnings and 3 errors generated.
+gmake: *** [empty.o] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'empty_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_controller_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'i2c_target_rw_multibyte_fifo_poll_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project inc_dec2 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'inc_dec2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_message_rx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_message_rx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'mcan_single_message_tx_LP_MSPM0G3507_nortos_ticlang.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project police_light ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'police_light.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project debouncing_Ass01 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -I"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug" -I"C:/ti/mspm0_sdk_2_02_00_05/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_02_00_05/source" -gdwarf-3 -MMD -MP -MF"empty.d_raw" -MT"empty.o"  @"./device.opt"  -o"empty.o" "../empty.c"
+../empty.c:7:26: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+volatile uint8_t delay = 500;
+                 ~~~~~   ^~~
+../empty.c:25:13: warning: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            printf("count: %d \n", delay);
+            ^
+../empty.c:25:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+../empty.c:28:35: warning: result of comparison of constant 1000 with expression of type 'volatile uint8_t' (aka 'volatile unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+        if (count <= 100 || count >= 1000)
+                            ~~~~~ ^  ~~~~
+../empty.c:30:21: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 500 to 244 [-Wconstant-conversion]
+            count = 500;
+                  ~ ^~~
+../empty.c:46:23: warning: result of comparison of constant 1000 with expression of type 'volatile uint8_t' (aka 'volatile unsigned char') is always true [-Wtautological-constant-out-of-range-compare]
+            if (delay < 1000)
+                ~~~~~ ^ ~~~~
+5 warnings generated.
+Finished building: "../empty.c"
+ 
+Building target: "debouncing_Ass01.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"debouncing_Ass01.map" -Wl,-i"C:/ti/mspm0_sdk_2_02_00_05/source" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01" -Wl,-i"D:/ti/Mahak/KPIT_Marathon_Practice/debouncing_Ass01/Debug/syscfg" -Wl,-i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="debouncing_Ass01_linkInfo.xml" -Wl,--rom_model -o "debouncing_Ass01.out" "./empty.o" "./ti_msp_dl_config.o" "./startup_mspm0g350x_ticlang.o" -Wl,-l"./device_linker.cmd"  -Wl,-ldevice.cmd.genlibs -Wl,-llibc.a 
+warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
+Finished building target: "debouncing_Ass01.out"
+ 
+
+**** Build Finished ****
