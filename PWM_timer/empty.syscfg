@@ -18,11 +18,18 @@ const SYSCTL = scripting.addModule("/ti/driverlib/SYSCTL");
 /**
  * Write custom configuration values to the imported modules.
  */
-GPIO1.$name                          = "GPIO_GRP_0";
-GPIO1.associatedPins[0].$name        = "k1";
-GPIO1.associatedPins[0].direction    = "INPUT";
-GPIO1.associatedPins[0].assignedPort = "PORTB";
-GPIO1.associatedPins[0].assignedPin  = "18";
+GPIO1.$name                              = "GPIO_GRP_0";
+GPIO1.associatedPins.create(2);
+GPIO1.associatedPins[0].$name            = "k1";
+GPIO1.associatedPins[0].direction        = "INPUT";
+GPIO1.associatedPins[0].assignedPin      = "18";
+GPIO1.associatedPins[0].assignedPort     = "PORTA";
+GPIO1.associatedPins[1].$name            = "k2";
+GPIO1.associatedPins[1].direction        = "INPUT";
+GPIO1.associatedPins[1].assignedPort     = "PORTB";
+GPIO1.associatedPins[1].assignedPin      = "21";
+GPIO1.associatedPins[1].internalResistor = "PULL_UP";
+GPIO1.associatedPins[1].invert           = "ENABLE";
 
 const Board = scripting.addModule("/ti/driverlib/Board", {}, false);
 
@@ -43,7 +50,8 @@ SYSCTL.forceDefaultClkConfig = true;
  * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
  * re-solve from scratch.
  */
-GPIO1.associatedPins[0].pin.$suggestSolution = "PB18";
+GPIO1.associatedPins[0].pin.$suggestSolution = "PA18";
+GPIO1.associatedPins[1].pin.$suggestSolution = "PB21";
 Board.peripheral.$suggestSolution            = "DEBUGSS";
 Board.peripheral.swclkPin.$suggestSolution   = "PA20";
 Board.peripheral.swdioPin.$suggestSolution   = "PA19";
